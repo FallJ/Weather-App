@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/30b0505062.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/wstyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <br />
+    <form id="search-form">
+      <span class="mb-3">
+        <input type="text" id="search-location" placeholder="Enter city" />
+      </span>
+      <button type="submit" class="btn btn-primary">Submit</button
+      ><button type="submit" class="btn btn-primary" id="geo-button">
+        Current Location
+      </button>
+    </form>
+    <br />
+    <div class="container">
+      <div class="city">
+        <div class="row">
+          <div class="column" id="current-city">
+            <strong>Elizabethtown, PA, USA</strong>
+          </div>
+          <span class="time" id="time">Wednesday, August 31 15:33</span>
+        </div>
+        <div class="row">
+          <span class="column" id="temperature"><strong>°C</strong></span>
+        </div>
+      </div>
+    </div>
+    <br />
+    <h3>5 day forecast</h3>
+    <br />
+    <div class="forecast">
+      <div class="row top">
+        <div class="col day">Monday</div>
+        <div class="col mid"><i class="far fa-sun"></i></div>
+        <div class="col">72°F / 22°C</div>
+      </div>
+      <div class="row">
+        <div class="col day">Tuesday</div>
+        <div class="col mid"><i class="far fa-sun"></i></div>
+        <div class="col">72°F / 22°C</div>
+      </div>
+      <div class="row">
+        <div class="col day">Wednesday</div>
+        <div class="col mid"><i class="far fa-sun"></i></div>
+        <div class="col">72°F / 22°C</div>
+      </div>
+      <div class="row">
+        <div class="col day">Thursday</div>
+        <div class="col mid"><i class="far fa-sun"></i></div>
+        <div class="col">72°F / 22°C</div>
+      </div>
+      <div class="row bottom">
+        <div class="col day">Friday</div>
+        <div class="col mid"><i class="far fa-sun"></i></div>
+        <div class="col">72°F / 22°C</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
