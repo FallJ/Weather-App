@@ -69,3 +69,10 @@ form {
   margin-left: 1px;
   margin-right: 2px;
 }
+.footer {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 25px;
+}
+  
