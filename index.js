@@ -35,7 +35,7 @@ if (currentHour < 10) {
 if (currentMinute < 10) {
   currentMinute = `0${currentMinute}`;
 }
-timeDate.innerHTML = `${currentDay}, ${currentMonth} ${date}  ${currentHour}:${currentMinute}`;
+timeDate.innerHTML = `${currentDay}, ${currentMonth} ${date},  ${currentHour}:${currentMinute}`;
 
 let findCity = document.querySelector("#search-form");
 findCity.addEventListener("submit", search);
